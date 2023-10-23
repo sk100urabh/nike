@@ -1,0 +1,152 @@
+@font-face {
+    font-family: chacah;
+    src: url(kingdom-estella/Kingdom\ Estella\ Script.otf);
+}
+@font-face {
+    font-family: bolo;
+    src: url(Heading-Now-Variable.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(243, 235, 232);
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    /* position: fixed; */
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 2%;
+}
+#left_nav{
+    font-size: 1.5vw;
+    font-family: chacha;
+}
+#cen_nav a{
+    font-size: 1.2vw;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000;
+   
+}
+#cen_nav{
+    display: flex;
+    gap: 1.5vw;
+}
+#right_nav{
+    display: flex;
+    gap: 1vw;
+    font-size: 1.5vw;
+    color: #858484;
+}
+#page1{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 10vw;
+}
+#left h1{
+    font-size: 9vw;
+    font-family: bolo;
+    font-weight: 900;
+    font-stretch: 280%;
+    line-height: 18vh;
+}
+#left button{
+    border: none;
+    background-color: #000;
+    padding: 1.5vh 4vh;
+    border-radius: 50px;
+    color: #fff;
+    font-family: bolo;
+    font-stretch: 460%;
+    margin-top: 5vh;
+    font-size: 1vw;
+}
+#left{
+    width: 50%;
+    height: 50vh;
+    /* background-color: rebeccapurple; */
+}
+#right{
+    width: 50%;
+    height: 50vh;
+    position: relative  ;
+}
+#right h1{
+    font-size: 40vw;
+    font-family: bolo;
+    font-stretch: 300%;
+    position: absolute;
+    margin-top: -36vh;
+    /* top: -11vh; */
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(209, 150, 144);
+}
+#right img{
+    position: absolute;
+   /* margin-top: 20vh; */
+}
+@media (max-width:500px) {
+    #main{
+        overflow: hidden;
+    }
+    nav a{
+        display: none;
+    }
+    nav{
+        height: 5vh;
+    }
+    nav h3{
+        font-size: 8vw;
+        font-family: bolo;
+        font-stretch: 260%;
+    }
+    nav i{
+        font-size:8vw ;
+    }
+    #left h1{
+        font-size: 20vw;
+        line-height: 10vh;
+        margin-top: 2vh;
+        margin-left: -20vw;
+    }
+    #page1{
+        display:flex;
+        flex-direction: column;
+    }
+    #left button{
+        font-size: 3vw;
+        margin-left: -10vh;
+    }
+    #right h1{
+        top: 30vh;
+        /* position:relative; */
+    font-size: 80vw;
+    margin-left: -20vw;
+    }
+    #right img{
+        /* position: relative; */
+        top: 8vh;
+        margin-left: -30vw;
+        height: 35vh;
+        /* margin-top: 25vh; */
+    }
+}
